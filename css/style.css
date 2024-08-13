@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+      
+}
+header{
+    background-color: #2B3035;;
+}
+/*imagen del logo*/
+.imagen-logo{
+    height: 100px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 7em;
+    height: 7em;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carrito {
+    height: 30px;
+    text-align: end;
+  }
+  .carrito img {
+    height: 100%;
+  }
+  
+  .titulo {
+    text-align: center;
+  }
+  .titulo h1 {
+    font-size: 50px;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .main {
+    margin-bottom: 6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .pizzas {
+    width: 30em;
+    height: max-content;
+    background-color: beige;
+    border: 6px solid lightgreen;
+    border-radius: 1rem;
+    padding: 10px 0px 10px 0px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  .pizzas img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .agregar-carrito {
+    background-color: blue;
+    border-radius: 15px;
+    color: white;
+    padding: 1px 5px 1px 5px;
+  }
+  
+  .finalizacion {
+    text-align: center;
+  }
+  
+  .whatsapp-btn {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-btn:hover {
+    background-color: #128c7e;
+  }
+  
+  .contact-main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact {
+    border-radius: 1rem;
+    border: 2px solid #dbe308;
+    padding-left: 1em;
+    margin: 0.5rem;
+  }
+  .contact h1 {
+    text-align: center;
+  }
+  .contact label {
+    margin-bottom: 5px;
+  }
+  .contact p {
+    text-align: center;
+  }
+  .contact input[type=text],
+  .contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .contact input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .barramenu__contenedor {
+    justify-content: center;
+  }
+  .barramenu__contenedor__lista {
+    margin: 0px 120px 0px 40px;
+  }
+  .barramenu__contenedor__lista__a {
+    background-color: beige;
+    text-decoration: none;
+    border-radius: 100px;
+    color: black;
+  }
+  .barramenu__contenedor__lista__a:hover {
+    color: #FF5733;
+  }
+  
+  .carrito {
+    height: 30px;
+    text-align: end;
+  }
+  .carrito__imagen {
+    height: 100%;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .container__titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+  }
+  .container__titulo__texto {
+    color: black;
+    line-height: 1.6;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .container__titulo__texto__subrayado {
+    color: #FF5733;
+    font-weight: bold;
+  }
+  
+  .carrousel {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+  }
+  .carrousel__imagen {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .ubicacion__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .ubicacion__info__texto {
+    text-align: center;
+  }
+  .ubicacion__info__imagen {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 400px;
+  }
+  
+  .footer__contenido {
+    text-align: center;
+  }
+  .footer__contenido h5 {
+    font-size: 2em;
+  }
+  
+  .footer__logo__final {
+    text-align: center;
+    margin-left: center;
+    height: 7em;
+  }
+  .footer__logo__final img {
+    height: 100%;
+  }
+  
+  .footer__textofinal {
+    text-align: center;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  .footer h5 {
+    font-size: 2em;
+  }
+  
+  .link {
+    padding: 0px 10px 0px 10px;
+    background-color: beige;
+    text-decoration: none;
+    border-radius: 100px;
+    color: black;
+  }
+  
+  .logo-final {
+    margin-left: center;
+    height: 7em;
+  }
+  .logo-final img {
+    height: 100%;
+  }
+  
+  @media (max-width: 992px) {
+    .imagen-logo {
+      display: none;
+    }
+    .pizzas {
+      height: max-content;
+      margin-top: 20px;
+      padding: 5px 0px 5px 0px;
+    }
+    .barramenu__contenedor {
+      display: block;
+    }
+    .barramenu__contenedor__lista {
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .barramenu__contenedor__lista__a {
+      border: 0px;
+      background-color: #2B3035;
+      color: white;
+    }
+    .carrousel {
+      width: 780px;
+    }
+    .carrousel__imagen {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .carrousel .ubicacion__info__imagen {
+      width: 800px;
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .carrousel {
+      width: 650px;
+    }
+    .carrousel__imagen {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .ubicacion__info__imagen {
+      width: 600px;
+      height: auto;
+    }
+  }
+  @media (max-width: 576px) {
+    .carrousel {
+      width: 500px;
+    }
+    .carrousel__imagen {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .ubicacion__info__imagen {
+      width: 400px;
+      height: auto;
+    }
+    }

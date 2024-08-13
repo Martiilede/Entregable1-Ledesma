@@ -1,0 +1,127 @@
+.main{
+    margin-bottom: 6em;
+    @include flex (row, wrap, space-around);
+    }
+    .pizzas{
+        @include width-height (30em, max-content);
+        background-color: $fondo-links;
+        border: $border;
+        border-radius: 1rem;
+        @include paddings (10px 0px 10px 0px);
+        margin-top: map-get($mapa , quinto );
+        text-align: center ;
+        img{
+            @include width-height (100% , 100%);
+        }
+    }
+        //imagenes de las pizzas
+    .agregar-carrito{
+        background-color: #0000ff;
+        border-radius: map-get($mapa , tercero );
+        color: $color-white;
+        @include paddings (1px 5px 1px 5px);
+    }
+    //ubicacion.html
+.ubicacion__info{
+    @include flex (row, wrap, center);
+    align-items: center;
+        &__texto{
+            text-align: center;
+        }
+        &__imagen{
+            @include margins (20px 0px 20px 0px);
+            @include width-height (1000px, 400px);
+        }
+        }
+        .contact-main{
+            @include flex(none, none, center);
+        }
+        .contact{
+            border-radius: 1rem;
+            border: 2px solid #dbe308;
+            padding-left: 1em;
+            margin: 0.5rem;
+            h1{
+                text-align: center;
+            }
+            label{
+                margin-bottom: map-get($mapa, cuarto);;
+            }
+            p{
+                text-align: center;
+            }
+            input[type="text"],
+            textarea{
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: map-get($mapa, cuarto);;
+                box-sizing: border-box;
+            }
+            input[type="submit"]{
+                background-color: #4CAF50;
+                color: $color-white;
+                @include paddings(10px 20px);
+                border: none;
+                border-radius: map-get($mapa, cuarto);
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        }
+        // nosotros.html
+        .container {
+            max-width: 800px;
+            @include margins (20px auto);
+            @include paddings (0px 20px);
+        
+            &__titulo {
+                text-align: center;
+                margin-bottom: 30px;
+                color: $color-black;
+        
+                &__texto {
+                    color: $color-black;
+                    line-height: 1.6em;
+                    font-size: map-get($mapa , primero);
+                    margin-bottom: 20px;
+        
+                    &__subrayado {
+                        color: $color-red;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        .carrousel {
+            @include flex (row, wrap, center);
+            @include width-height (650px, auto);
+        
+            &__imagen {
+                @include width-height (100%, auto);
+                @include margins(20px none 20px none);
+            }
+        }
+//carrito.html
+
+.finalizacion{
+    text-align: center;
+    }
+    .whatsapp-btn {
+      text-decoration: none;
+      background-color: #25d366;
+      color: $color-white;
+      border: none;
+      @include paddings (10px 20px);
+      border-radius: map-get($mapa , cuarto);
+      font-size: map-get($mapa , tercero);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover{
+          background-color: #128c7e;
+      }
+     };

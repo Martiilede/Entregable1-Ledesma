@@ -1,0 +1,39 @@
+.footer__contenido{
+    text-align: center;
+    &__redes{
+        h5{
+            font-size: 2em;
+        }
+    }
+}
+.link{
+    background-color: beige;
+    text-decoration: none;
+    border-radius: 100px;
+    @include paddings (3px 10px 3px 10px);
+    color: $color-black;
+}
+.footer__logo__final{
+    text-align: center;
+    @include width-height(none, 7em);
+    img{
+        @include width-height(none ,100%);
+        animation: giro-final;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        @keyframes giro-final {
+            from{
+             transform: rotatey(0deg);
+            }
+            to{
+            transform: rotatey(360deg);
+            }
+        }
+    }
+}
+
+.footer__textofinal{
+    text-align: center;
+}

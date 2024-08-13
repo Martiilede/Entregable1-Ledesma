@@ -1,0 +1,73 @@
+header {
+    background-color: $fondo;
+}
+
+// imagen del logo
+.imagen-logo {
+    @include width-height (none, 100px);
+    text-align: center;
+}
+
+// logo de la izquierda
+.logo {
+    @include width-height(7em, 7em);
+
+    img {
+        @include width-height(none, 100%);
+        animation: giro;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+        @keyframes giro {
+
+            80%,
+            100% {
+                opacity: 1;
+                transform: rotateX(360deg);
+            }
+
+            0% {
+                opacity: 0;
+            }
+
+            70% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// BEM de la barra menu
+.barramenu__contenedor {
+    justify-content: center;
+
+    &__lista {
+        @include margins (0px 120px 0px 40px);
+
+        &__a {
+            background-color: $fondo-links ;
+            text-decoration: none;
+            border-radius: map-get($mapa , tercero);
+            color: $color-black;
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+                      
+            &:hover {
+                color: $color-red;
+            }
+        }
+    }
+}
+
+.carrito {
+    height: 30px;
+    text-align: end;
+
+    &__imagen {
+        height: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+//carrito de compras
+.carrito{
+    height: 30px;
+    text-align: end;
+    img{
+        height: 100%;
+    }
+}
+//Titulos y subtitulos
+.titulo{
+    text-align: center;
+    h1{
+        font-size: map-get($mapa , quinto );
+        font-family: "Nunito Sans", sans-serif;
+        font-optical-sizing: auto;
+    }
+}

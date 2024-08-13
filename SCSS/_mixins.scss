@@ -1,0 +1,16 @@
+@mixin width-height ($w, $h){
+    width: $w;
+    height: $h;
+}
+@mixin paddings ($p){
+    padding: $p;
+}
+ @mixin margins ($m){
+    margin: $m;
+ }
+ @mixin flex ($r, $w, $s) {
+    display: flex;
+    flex-direction: $r;
+    flex-wrap: $w;
+    justify-content: $s;
+ }

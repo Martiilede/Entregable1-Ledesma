@@ -1,0 +1,53 @@
+@media (max-width: 992px){
+    .imagen-logo{
+        display: none;
+    }
+    .barramenu__contenedor{
+       display: block;
+     &__lista{
+       @include margins(20px 0px 0px 0px);
+       &__a{
+           border: 0px;
+           background-color: $fondo;
+           color: white;
+       }
+   }
+   }
+    .pizzas{
+        height: max-content;
+        margin-top: 20px;
+        @include paddings (5px 0px 5px 0px);
+    }
+    .ubicacion__info__imagen{
+        @include width-height (800px, auto)
+        }
+.carrousel{
+@include width-height(580px, none);
+    &__imagen{
+        @include margins(20px none 20px none);
+    }
+}
+}
+@media (max-width: 768px){
+    .carrousel{
+        @include width-height(480px, none);
+            &__imagen{
+                @include margins(20px none 10px none);
+            }
+        }
+        .ubicacion__info__imagen{ 
+               @include width-height (600px, auto)
+}
+}
+@media (max-width: 576px){
+    .carrousel{
+        @include width-height(380px, none);
+            &__imagen{
+                @include margins(20px none 20px none);
+            }
+        }
+        .ubicacion__info__imagen{
+               @include width-height (400px, auto)
+            
+}
+}
