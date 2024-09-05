@@ -91,6 +91,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+#finalizar {
+  margin-bottom: 6em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .pizzas {
   width: 30em;
@@ -212,6 +219,22 @@ header {
   text-align: center;
 }
 
+#decrement {
+    width: 25px;
+    background-color: blue;
+    color: white
+}
+#increment {
+  width: 25px;
+  background-color: blue;
+  color: white
+}
+#remove {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+}
 .whatsapp-btn {
   text-decoration: none;
   background-color: #25d366;
@@ -313,6 +336,9 @@ header {
     width: 600px;
     height: auto;
   }
+  #finalizar .pizzas {
+    width: 20em;
+  }
 }
 @media (max-width: 576px) {
   .carrousel {
@@ -325,6 +351,9 @@ header {
   .ubicacion__info__imagen {
     width: 400px;
     height: auto;
+  }
+  #finalizar .pizzas {
+    width: 18em;
   }
 }
 

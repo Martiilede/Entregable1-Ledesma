@@ -18,6 +18,8 @@
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!--Styles-->
      <link rel="stylesheet" href="../css/main.css">
+     <!--Javascript-->
+     <script defer src="../js/opiniones.js"></script>
      <!--Title and icon-->
      <title>Pizzeria A la Pizza</title>
      <link rel="icon" href="../assets/pizzahml.ico" type="image/x-icon">
@@ -60,20 +62,20 @@
       </div>
     </aside>
         <main class="contact-main">
-            <div class="contact">
-                <h1>Contacto</h1>
-                <form action="#" method="post">
-                    <label for="name">Nombre y Apellido:</label>
-                    <input type="text" id="name" name="name" required>
+          <div id="contactSection" class="contact">
+            <h1 id="contactTitle">Contacto</h1>
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" required>
         
-                    <label for="contact">Mail o Teléfono:</label>
-                    <input type="text" id="contact" name="contact" required>
+                <label for="contact">Mail o Teléfono:</label>
+                <input type="text" id="contact" name="contact" required>
         
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
         
-                    <input type="submit" value="Enviar">
-                </form>
+                <input type="submit" value="Enviar">
+            </form>
                 <p>¡MUCHAS GRACIAS POR CONTACTARNOS!</p>
             </div>
         </main>
@@ -96,4 +98,5 @@
             </div>
         </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>

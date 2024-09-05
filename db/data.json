@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "nombre": "PIZZA CALABRESA",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso, muzzarella y rodajas de salame.",
+      "imagen": "../assets/pizza-calabresa.jpg",
+      "button": "Agregar al Carrito",
+      "precio" : 6000
+    },
+    {
+      "id": 2,
+      "nombre": "PIZZA FUGAZETA",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso muzzarella y cebolla caramelizada.",
+      "imagen": "../assets/pizza-fugazza.jfif",
+      "button": "Agregar al Carrito",
+      "precio" : 6000
+    },
+    {
+      "id": 3,
+      "nombre": "PIZZA 4 QUESOS",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso azul, muzzarella, cremoso, y queso rallado.",
+      "imagen": "../assets/pizza-4q.jpg",
+      "button": "Agregar al Carrito",
+      "precio" : 6500
+    },
+    {
+      "id": 4,
+      "nombre": "PIZZA ESPECIAL",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso, muzzarella, jamón cocido y morrón rojo.",
+      "imagen": "../assets/pizza-especial.jfif",
+      "button": "Agregar al Carrito",
+      "precio" : 7000
+    },
+    {
+      "id": 5,
+      "nombre": "PIZZA MUZZARELLA",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso, muzzarella.",
+      "imagen": "../assets/pizza-muzzarella.jfif",
+      "button": "Agregar al Carrito",
+      "precio" : 5500
+    },
+    {
+      "id": 6,
+      "nombre": "PIZZA NAPOLITANA",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso, muzzarella con rodajas de tomate.",
+      "imagen": "../assets/pizza-napo.jfif",
+      "button": "Agregar al Carrito",
+      "precio" : 6200
+    },
+    {
+      "id": 7,
+      "nombre": "PIZZA RÚCULA",
+      "parrafo": "Masa casera, salsa hecha por la casa, queso, muzzarella y rúcula.",
+      "imagen": "../assets/pizza-rucula.jfif",
+      "button": "Agregar al Carrito",
+      "precio" : 5700
+    }
+  ]

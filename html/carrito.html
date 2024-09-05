@@ -20,10 +20,11 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <!--Javascript-->
-    <!-- <script defer src="../js/main.js"></script> -->
     <script defer src="../js/carrito.js"></script>
   <!--AOS animations-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!--Sweetalerts styles-->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
   <!--Styles-->
   <link rel="stylesheet" href="../css/main.css">
   <!--Title and icon-->
@@ -71,19 +72,66 @@
   </aside>
   <main>
     <section class="finalizacion">
-      <h1>FINALIZANDO COMPRA.</h1>
-      <article id="finalizar">
-
-      </article>
-      <article>
-        <h3>¡¡¡Muchas Gracias por tu Compra!!!</h3>
-      </article>
-      <button class="whatsapp-btn">
-        <a href="" class="whatsapp-btn">
-          <i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp
-        </a>
-      </button>
+      <h1>¡¡¡FINALIZANDO COMPRA.!!!</h1>
     </section>
+    <div class="container-fluid" id="finalizar">
+    </div>
+<section class="finalizacion" id="preciofinal">
+  <article>
+    <h3>¡¡¡Muchas Gracias por tu Compra!!!</h3>
+  </article>
+  <button class="whatsapp-btn" id="boton-enviar">
+      <i class="fab fa-whatsapp"></i> Enviar pedido por WhatsApp
+  </button>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="popup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popupLabel">Información del Pedido</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="item-list"></ul>
+        <form id="order-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre y Apellido:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Número de Teléfono:</label>
+            <input type="tel" id="phone" name="phone" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Dirección:</label>
+            <input type="text" id="address" name="address" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <hr>
+        <div id="total-price" class="mt-3">
+          <strong>Precio Total:</strong> $0.00
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal para el Resumen del Pedido -->
+<div class="modal fade" id="summary-popup" tabindex="-1" aria-labelledby="summaryPopupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="summaryPopupLabel">Resumen del Pedido</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="summary-info"></p>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
   <footer>
     <div class="footer__contenido">
@@ -104,5 +152,7 @@
     </div>
   </footer>
 </body>
-
+<!--SweetAlerts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
 </html>
