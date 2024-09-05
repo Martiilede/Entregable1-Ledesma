@@ -8,7 +8,7 @@ function cargarDatos() {
 }
 cargarDatos()
 
-fetch("../db/data.json")
+fetch("./db/data.json")
 .then(response => response.json())
 .then(data => {
     const main = document.getElementsByClassName("main")[0];
